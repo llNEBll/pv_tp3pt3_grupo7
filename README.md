@@ -9,10 +9,13 @@ Este proyecto fue desarrollado utilizando React y Vite. Consiste en una aplicaci
 ### Funcionalidades
 
 - Visualización de proyectos educativos.
-- Búsqueda de proyectos por título.
-- Agregado de nuevos proyectos.
+- Búsqueda de proyectos por título (filtro aislado del registro de actividad).
+- Agregado de nuevos proyectos mediante formulario independiente.
 - Eliminación de proyectos existentes.
 - Visualización de categoría y estado de cada proyecto.
+- Registro de actividad en tiempo real que muestra la fecha y hora de la última modificación (agregar o eliminar).
+- El registro de actividad NO se muestra al cargar la página por primera vez.
+- El filtro de búsqueda NO altera la fecha/hora del registro de actividad.
 
 ### Tecnologías Utilizadas
 
@@ -24,13 +27,19 @@ Este proyecto fue desarrollado utilizando React y Vite. Consiste en una aplicaci
 
 ### Conceptos Aplicados
 
-- Componentes reutilizables.
-- Hooks de React (useState).
+- Componentes funcionales y reutilizables.
+- Hooks de React: useState, useEffect, useRef.
+- useEffect con arreglo de dependencias para escuchar cambios en el estado proyectos.
+- useRef como bandera para evitar la primera ejecución del efecto.
+- Props: datos de solo lectura que se pasan de padres a hijos.
+- Componente de presentación (RegistroActividad) que recibe datos por props.
+- Elevación del estado: el componente hijo (FormularioProyecto) pasa datos al padre mediante callback.
 - Manejo de eventos.
 - Renderizado dinámico mediante map().
 - Gestión de datos mediante servicios.
-- Filtrado de información mediante búsqueda.
+- Filtrado de información aislado del efecto secundario.
 - Organización del proyecto en componentes y servicios.
+
 
 ### Integrantes del Grupo 7
 
@@ -47,7 +56,7 @@ Este proyecto fue desarrollado utilizando React y Vite. Consiste en una aplicaci
 
 Clonar el repositorio:
 
-git clone https://github.com/PortilloLeonardo/pv_tp3_grupo7
+git clone https://github.com/llNEBll/pv_tp3pt3_grupo7
 
 Ejecutar proyecto en la terminal:
 
