@@ -26,9 +26,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-/*==Especificaciones generales==
-Usamos los siguientes parametros para todas las paginas
- por lo cual lo mejor era estandarizar los parametros*/
+/*==Especificaciones generales==*/
 html {
 font-size: 62.5%;
 }
